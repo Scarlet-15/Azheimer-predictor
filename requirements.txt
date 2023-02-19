@@ -2,7 +2,7 @@ streamlit
 requests
 numpy
 streamlit_lottie
-PIL
+pillow
 hydralit_components
 time
 tensorflow
