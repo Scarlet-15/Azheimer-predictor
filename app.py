@@ -1,7 +1,7 @@
 import streamlit as st
 import requests
 import numpy as np
-from streamlit_lottie import st_lottie
+#from streamlit_lottie import st_lottie
 from PIL import Image
 import hydralit_components as hc
 import time
@@ -38,16 +38,16 @@ menu_id = hc.nav_bar(menu_definition=menu_data, home_name='Main Page', override_
 st.info(f"{menu_id=}")
 
 
-def lottie_load(url: str):
-    r = requests.get(url)
-    if r.status_code != 200:
-        return None
-    return r.json()
+# def lottie_load(url: str):
+#     r = requests.get(url)
+#     if r.status_code != 200:
+#         return None
+#     return r.json()
 
 
 # Inserting lottie animations
 
-lottie = lottie_load("https://assets5.lottiefiles.com/packages/lf20_gkgqj2yq.json")
+# lottie = lottie_load("https://assets5.lottiefiles.com/packages/lf20_gkgqj2yq.json")
 
 # img_link1 = Image.open(r"C:\Users\Harinee\Desktop\Training_120178.jpg")
 # img_link2 = Image.open(r"C:\Users\Harinee\Desktop\exp.png")
@@ -92,9 +92,9 @@ def main_page():
                 st.write(
                     "[Click here to learn more>](https://www.mayoclinic.org/diseases-conditions/alzheimers-disease/symptoms-causes/syc-20350447)")
 
-            with right_column:
-                # insert the animation
-                st_lottie(lottie, height=300, key="Perfect Cure")
+            # with right_column:
+            #     # insert the animation
+            #     st_lottie(lottie, height=300, key="Perfect Cure")
 
         with st.container():
             st.write("---")
