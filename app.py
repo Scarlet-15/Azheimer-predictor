@@ -14,7 +14,7 @@ import pandas as pd
 st.set_page_config(page_title="Main Page", page_icon=":tada:", layout="wide")
 
 #inculding comments
-with hc.HyLoader('loading', hc.Loaders.standard_loaders, index=[3, 0, 5]):
+with hc.HyLoader('loading', hc.Loaders.standard_loaders, index=[3]):
     time.sleep(0.5)
 
 # specify the primary menu definition
