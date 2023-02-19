@@ -198,7 +198,7 @@ def page3():
     st.write("Due to the unavailability of huge data, I used transfer learning with VGG16.")
     st.write("For this problem even simpler pretrained networks would give pretty decent results.")
 
-    model = tf.keras.models.load_model("vgg16.h5")
+    model = tf.keras.models.load_model("customneural.h5")
     image = st.file_uploader("Upload Image to classify as Rural/Urban Scene", 
     type=['png', 'jpeg', 'jpg'])
 
