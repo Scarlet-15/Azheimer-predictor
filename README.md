@@ -17,13 +17,11 @@ We have used Convolutional Neural Network to train our Neural Network. To achiev
 
 ## How to use
 * Refer to our video demo [in youtube](https://youtu.be/vcRnDZyhBuY).
-
 ![demo video](demo.gif)
-
 * You can use data that I have in this folder by cloning this repo, or you can manually use data from internet.
 
 * **Test with data that are in similar grounds of training data**.
-* **Upload only rural/urban scene images**.
+* **Upload only MRI scanned images**.
 
 ## Implementation
 * Picked up `VGG-16` Architecture for transfer learning.
