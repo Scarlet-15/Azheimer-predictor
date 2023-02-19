@@ -1,6 +1,4 @@
 streamlit
-requests
-numpy
 streamlit_lottie
 pillow
 hydralit_components
