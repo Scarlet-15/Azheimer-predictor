@@ -11,7 +11,7 @@ from tensorflow.keras.preprocessing.image import load_img
 from tensorflow.keras.preprocessing.image import img_to_array
 import pandas as pd
 
-st.set_page_config(page_title="Azheimer Predictor", page_icon="", layout="wide")
+st.set_page_config(page_title="Azheimer Predictor", page_icon="")
 
 with hc.HyLoader('Loading..', hc.Loaders.standard_loaders, index=[0]):
     time.sleep(0.5)
