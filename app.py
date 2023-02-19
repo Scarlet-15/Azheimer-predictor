@@ -99,8 +99,7 @@ def predictor():
 
 page_names_to_funcs = {
     "Azheimer Predictor": predictor,
-    "Click to know about Azheimer": about_azheimer,
-    #"Page 2": page2,   
+    "Click to know about Azheimer": about_azheimer, 
 }
 
 selected_page = st.sidebar.selectbox("Select a page", page_names_to_funcs.keys())
