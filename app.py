@@ -1,9 +1,9 @@
 import streamlit as st
 import requests
 import numpy as np
-#from streamlit_lottie import st_lottie
+from streamlit_lottie import st_lottie
 from PIL import Image
-# import hydralit_components as hc
+import hydralit_components as hc
 import time
 import tensorflow as tf
 from tensorflow.keras.preprocessing.image import img_to_array
@@ -14,9 +14,8 @@ import pandas as pd
 st.set_page_config(page_title="Main Page", page_icon=":tada:", layout="wide")
 
 
-
-# with hc.HyLoader('loading', hc.Loaders.standard_loaders, index=[3, 0, 5]):
-#     time.sleep(2)
+with hc.HyLoader('loading', hc.Loaders.standard_loaders, index=[3, 0, 5]):
+    time.sleep(2)
 
 # specify the primary menu definition
 menu_data = [
@@ -38,16 +37,16 @@ menu_id = hc.nav_bar(menu_definition=menu_data, home_name='Main Page', override_
 st.info(f"{menu_id=}")
 
 
-# def lottie_load(url: str):
-#     r = requests.get(url)
-#     if r.status_code != 200:
-#         return None
-#     return r.json()
+def lottie_load(url: str):
+    r = requests.get(url)
+    if r.status_code != 200:
+        return None
+    return r.json()
 
 
 # Inserting lottie animations
 
-# lottie = lottie_load("https://assets5.lottiefiles.com/packages/lf20_gkgqj2yq.json")
+lottie = lottie_load("https://assets5.lottiefiles.com/packages/lf20_gkgqj2yq.json")
 
 # img_link1 = Image.open(r"C:\Users\Harinee\Desktop\Training_120178.jpg")
 # img_link2 = Image.open(r"C:\Users\Harinee\Desktop\exp.png")
@@ -92,9 +91,9 @@ def main_page():
                 st.write(
                     "[Click here to learn more>](https://www.mayoclinic.org/diseases-conditions/alzheimers-disease/symptoms-causes/syc-20350447)")
 
-            # with right_column:
-            #     # insert the animation
-            #     st_lottie(lottie, height=300, key="Perfect Cure")
+            with right_column:
+                # insert the animation
+                st_lottie(lottie, height=300, key="Perfect Cure")
 
         with st.container():
             st.write("---")
@@ -217,8 +216,8 @@ def page3():
 
         label1 = ["Positive","Negative"]
         st.write("## Binary Prediction")
-        st.write(f"* **Negative** : {out[0]+out[1]+out[3]:.4f}") 
-        st.write(f"* **Positive** : {out[2]:.4f}")
+        st.write(f"* **Positive** : {out[0]+out[1]+out[3]:.4f}") 
+        st.write(f"* **Negative** : {out[2]:.4f}")
         Prob1 = [out[0]+out[1]+out[3], out[2]]
         chart_data1 = pd.DataFrame(
                 np.array(Prob1),
