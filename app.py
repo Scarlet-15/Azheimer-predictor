@@ -99,7 +99,7 @@ def predictor():
 
 page_names_to_funcs = {
     "Azheimer Predictor": predictor,
-    "Click to know about our model": about_azheimer,
+    "Click to know about Azheimer": about_azheimer,
     #"Page 2": page2,   
 }
 
