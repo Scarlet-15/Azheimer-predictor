@@ -83,5 +83,6 @@ def predictor():
             )
             st.bar_chart(chart_data)
 
+predictor()
 
 
