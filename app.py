@@ -14,27 +14,27 @@ import pandas as pd
 st.set_page_config(page_title="Main Page", page_icon=":tada:", layout="wide")
 
 #inculding comments
-with hc.HyLoader('loading', hc.Loaders.standard_loaders, index=[0]):
+with hc.HyLoader('Loading..', hc.Loaders.standard_loaders, index=[0]):
     time.sleep(0.5)
 
 # specify the primary menu definition
-menu_data = [
-    {'icon': "far fa-copy", 'label': "Conditions"},
-    {'id': 'Copy', 'label': "Well-Being"},
-    {'icon': "far fa-chart-bar", 'label': "Symptom Checker"},  # no tooltip message
-    {'icon': "far fa-address-book", 'label': "Find doctors nearby"},
-    {'id': 'options','label': "More"},
-    {'icon': "fas fa-tachometer-alt", 'label': "Dashboard", 'ttip': "See the history here"},
-    # can add a tooltip message
+# menu_data = [
+#     {'icon': "far fa-copy", 'label': "Conditions"},
+#     {'id': 'Copy', 'label': "Well-Being"},
+#     {'icon': "far fa-chart-bar", 'label': "Symptom Checker"},  # no tooltip message
+#     {'icon': "far fa-address-book", 'label': "Find doctors nearby"},
+#     {'id': 'options','label': "More"},
+#     {'icon': "fas fa-tachometer-alt", 'label': "Dashboard", 'ttip': "See the history here"},
+#     # can add a tooltip message
 
-]
-# we can override any part of the primary colors of the menu
-# over_theme = {'txc_inactive': '#FFFFFF','menu_background':'red','txc_active':'yellow','option_active':'blue'}
-over_theme = {'txc_inactive': '#FFFFFF', 'menu_background':'black','txc_active':'white','option_active':'blue'}
-menu_id = hc.nav_bar(menu_definition=menu_data, home_name='Main Page', override_theme=over_theme)
+# ]
+# # we can override any part of the primary colors of the menu
+# # over_theme = {'txc_inactive': '#FFFFFF','menu_background':'red','txc_active':'yellow','option_active':'blue'}
+# over_theme = {'txc_inactive': '#FFFFFF', 'menu_background':'black','txc_active':'white','option_active':'blue'}
+# menu_id = hc.nav_bar(menu_definition=menu_data, home_name='Main Page', override_theme=over_theme)
 
-# get the id of the menu item clicked
-st.info(f"{menu_id=}")
+# # get the id of the menu item clicked
+# st.info(f"{menu_id=}")
 
 
 def lottie_load(url: str):
