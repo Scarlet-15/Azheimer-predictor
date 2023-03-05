@@ -1,7 +1,7 @@
 # Azheimer-predictor
 Deep Learning Neural Net for HAXIOS-2023
 Streamlit App Link: 
-[click here](https://muhmmadabrar-azheimer-predictor-app-4e7iva.streamlit.app/)
+[click here](https://alzheimer-predictor.streamlit.app/)
 
 ## Introduction
 Alzheimer's disease is a type of brain disease caused by damage to nerve cells (neurons) in the brain.
